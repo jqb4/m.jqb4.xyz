@@ -1,0 +1,66 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    position: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center;
+    height: 100vh; /* Make the container take full height */
+    width: 100vh;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between links */
+    font-size: 17px; /* Adjust font size to match your style */
+    text-align: center;
+    color: #ffffff;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 31.5px;
+}
+
+.header {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 250px;
+    color: #ffffff;
+    display: flex;
+    text-align: center;
+    display: inline-block;
+}
+
+.ibeam {
+    width:1.5px;
+    height: 175px;
+    background-color: red;
+    margin-top: 12px;
+    margin-left: 3px;
+    animation: blink 1s step-start infinite; 
+    position: absolute;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
